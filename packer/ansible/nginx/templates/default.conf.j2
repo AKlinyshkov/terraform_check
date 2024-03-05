@@ -1,0 +1,10 @@
+server {
+  listen       8800;
+  server_name  _;
+
+  default_type text/plain;
+
+  location / {
+    return 200 '$hostname\n';
+  }
+}
